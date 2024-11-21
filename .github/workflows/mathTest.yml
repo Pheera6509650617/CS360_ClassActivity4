@@ -10,9 +10,6 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
-      - name: List files in the repository
-        run: |
-          ls ${{ github.workspace }}
       - run: npm init -y
       - run: npm install jest
       - run: cd src/_test_
